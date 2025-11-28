@@ -12,7 +12,7 @@ services:
       # - ./:/app/
       - ./public_html:/app/ # application
       # - /etc/letsencrypt:/etc/letsencrypt:ro # SSL CERTBOT
-      - ./docker/nginx/nginx.angular2.conf:/etc/nginx/conf.d/default.conf # após gerar o certificado passar essa conf
+      - ./docker/nginx/nginx.angular.conf:/etc/nginx/conf.d/default.conf # após gerar o certificado passar essa conf
     links:
       - php
 
